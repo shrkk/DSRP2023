@@ -1,4 +1,5 @@
 library(ggplot2)
+library(dplyr)
 ggplot()
 
 #assignment related values
@@ -29,5 +30,9 @@ ggplot(data = heart_data, aes(x=age, y=cp, color = cp, size = stat(Density))) +
   geom_count() + 
   labs (x = "Age", y = "Type of Chest Pain (With Age Density)") +
   guides(color = guide_legend(title = "CPI"))
-  
+
+
+
+
+
   
